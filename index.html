@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  
+  <title>Notifications page</title>
+</head>
+<body>
+
+ <div class="container-all">
+    <header class="header-notifications container">
+      <div class="notifications">
+        <h2 class="notifications__titulo">Notifications</h2>
+        <span class="notifications__count">3</span>
+        
+      </div>
+
+      <button class="mark-read"> Mark all as read </button>
+
+    </header>
+
+    <section class="all-notifications container">
+        <div class="notification-content --active">
+          <figure class="avatar">
+              <img src="./assets/images/avatar-mark-webber.webp" class="avatar__img" alt="avatar-img">
+          </figure>
+
+          <div class="paragraph-content">
+            <p class="paragraph">
+              <strong>Mark Webber</strong> reacted to your recent post 
+              <span class="paragraph-post">My first tournament today!</span>
+              <span class="is-active"> </span>
+            </p>
+            
+            <span class="active-ago">1m ago</span>
+          </div>
+          
+        </div>
+
+        <div class="notification-content --active">
+          <figure class="avatar">
+            <img src="./assets/images/avatar-angela-gray.webp" class="avatar__img" alt="avatar-img">
+          </figure>
+
+          <div class="paragraph-content">
+            <p class="paragraph">
+              <strong>Angela Gray</strong> followed you
+              <span class="is-active"> </span>
+            </p>
+          
+            <span class="active-ago">5m ago</span>
+          </div>
+
+          
+        </div>
+
+        <div class="notification-content --active">
+          <figure class="avatar">
+            <img src="./assets/images/avatar-jacob-thompson.webp" class="avatar__img" alt="avatar-img">
+          </figure>   
+
+          <div class="paragraph-content">
+            <p class="paragraph">
+              <strong>Jacob Thompson</strong> has joined your group 
+              <a href="#">Chess Club</a>
+              <span class="is-active"></span>
+            </p>
+
+            <span class="active-ago">1 day ago</span>
+          </div>
+
+        </div>
+
+        <div class="notification-content">
+          <figure class="avatar">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" class="avatar__img" alt="avatar-img">
+          </figure>
+
+          <div class="paragraph-content">
+            <p class="paragraph">
+              <strong>Rizky Hasanuddin</strong> sent you a private message
+            </p>
+            
+            <span class="active-ago">5 days ago</span>
+          
+            <p class="notification-message">
+              Hello, thanks for setting up the Chess Club. I've been a 
+              member for a few weeks now and I'm already having lots of
+              fun and improving my game. 
+            </p>
+          </div>
+        </div>
+
+        <div class="notification-content">
+          <figure class="avatar">
+            <img src="./assets/images/avatar-kimberly-smith.webp" class="avatar__img" alt="avatar-img">
+          </figure>
+
+          <div class="paragraph-content">
+            <p class="paragraph">
+              <strong>Kimberly Smith</strong> commented on your picture
+            </p>
+                      
+            <span class="active-ago">1 week ago</span>
+          </div>
+
+          <figure class="img-container">
+            <img class="img-post" src="./assets/images/image-chess.webp" alt="post-img">
+          </figure>
+
+        </div>
+
+        <div class="notification-content">
+          <figure class="avatar">
+            <img src="./assets/images/avatar-nathan-peterson.webp" class="avatar__img" alt="avatar-img">
+          </figure>
+
+          <div class="paragraph-content">
+            <p class="paragraph">
+              <strong>Nathan Peterson</strong> reacted to your recent post 
+              <span class="paragraph-post">5 end-game strategies to increase your win rate</>
+            </p>
+          
+            <span class="active-ago">2 weeks ago</span>
+          </div>
+
+        </div>
+
+        <div class="notification-content">
+          <figure class="avatar">
+            <img src="./assets/images/avatar-anna-kim.webp" class="avatar__img" alt="avatar-img">
+          </figure>
+
+          <div class="paragraph-content">
+            <p class="paragraph">
+              <strong>Anna Kim</strong> left the group 
+              <a href="#">Chess Club</a>
+            </p>
+          
+            <span class="active-ago">2 weeks ago</span>
+          </div> 
+        </div>
+    </section>
+
+
+    <div class="attribution">
+      Challenge by <a class="frontend-mentor" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a class="author" href="https://github.com/JackAlvites12">Jack Manuel Alvites Mejía</a>.
+    </div>
+ </div>
+    
+ <script src="./js/script.js"></script>
+</body>
+</html>

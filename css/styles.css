@@ -1,0 +1,209 @@
+:root{
+
+    /* Primary */
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --ver-v-da-k-blu: hsl(224, 21%, 14%);
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    
+}
+
+.container{
+    width: 90%;
+    max-width: 700px;  /* The correct width, the guide is very spacious */
+    margin: 25px auto;
+
+}
+
+/* HEADER */
+
+.header-notifications{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+
+
+.notifications{
+    display: flex;
+    align-items: center;
+
+}
+
+.notifications__count{
+    display: inline-block;
+    text-align: center;
+    margin-left: 5px;
+    color: var(--white);
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 2px;
+    width: 1.9em;
+    background-color: var(--blue);
+}
+
+.mark-read{
+    display: flex;
+    align-items: flex-end;
+    font-weight: 0;
+    font-size: 1em;
+    color: var(--dark-grayish-blue);
+    border: none;
+    background: transparent;
+}
+
+/* --------------------------------------- */
+
+/* all-notifications */
+
+.all-notifications{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.notification-content{
+    padding: .8em;
+    display: flex;
+    gap: 12px;
+}
+
+.--active{
+    background: var(--light-grayish-blue-1);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.avatar{
+    display: flex;
+    align-items: flex-start;
+}
+
+.avatar__img{
+    width: 45px;
+}
+
+.paragraph{
+    color: var(--dark-grayish-blue);
+    font-size: 15px;
+}
+
+.paragraph strong{
+    color: #000;
+}
+
+.paragraph a{
+    text-decoration: none;
+    font-weight: 700;
+}
+.paragraph-post{
+    color: var(--dark-grayish-blue);
+    font-weight: 600;
+}
+
+.is-active{
+    display: inline-block;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+    background: var(--red);
+} 
+
+.active-ago{
+    display: block;
+    margin-top: 6px;
+    color: var(--grayish-blue);
+}
+
+.notification-message{
+    color: var(--dark-grayish-blue);
+    margin-top: 12px;
+    border: 1px solid var(--grayish-blue);
+    padding: 1em;
+    transition: background .5s;
+
+}
+
+.img-post{
+    width: 39px;
+}
+
+.attribution{
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.frontend-mentor, .author{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* -------------- Active states ----------------*/
+
+.mark-read, .paragraph-post, .img-post, strong:hover{
+    transition: all .3s;
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.notification-message:hover{
+    cursor: pointer;
+    background: var(--light-grayish-blue-2);
+}
+/* ____________________*/
+
+/* DESKTOP */
+@media (width >= 700px){
+
+    body{
+        display: flex;
+        justify-content: center;    
+        align-items: center;    
+        background: var(--very-light-grayish-blue);
+        min-height: 100vh;
+        outline: 1px solid red;
+    }
+
+    
+    /*--very-light-grayish-blue */
+    .container-all{
+        box-shadow: 0px 0px 10px 0 var(--light-grayish-blue-2);
+        border-radius: 20px;
+        background: var(--white);
+    }
+
+    .notification-content{
+        position: relative;
+    }
+
+    .img-post{
+        width: 45px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 15px;
+        margin: auto;
+    }
+}
